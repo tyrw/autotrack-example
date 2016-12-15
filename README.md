@@ -8,6 +8,6 @@ Replace tracking ID in `./src/index.js`
 
 ```
 npm install
-webpack --watch
+webpack
 npm start
 ```
