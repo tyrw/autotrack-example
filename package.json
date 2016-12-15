@@ -1,0 +1,22 @@
+{
+  "name": "autotrack-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autotrack": "^1.0.3",
+    "babel-core": "^6.20.0",
+    "babel-loader": "^6.2.10",
+    "webpack": "^1.14.0"
+  },
+  "dependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.14.0"
+  }
+}
