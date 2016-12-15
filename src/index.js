@@ -1,8 +1,11 @@
-import 'autotrack'
-// import './analytics.js'
-ga('create', 'UA-XXXXXXXX-1', 'auto')
+import 'autotrack/lib/plugins/clean-url-tracker'
+import 'autotrack/lib/plugins/outbound-link-tracker'
+import 'autotrack/lib/plugins/url-change-tracker'
 
-console.log(window.ga)
+ga('create', 'UA-XXXXXXXX-1', 'auto')
+ga('require', 'cleanUrlTracker')
+ga('require', 'outboundLinkTracker')
+ga('require', 'urlChangeTracker')
 
 ga('send', {
   hitType: 'pageview',
