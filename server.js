@@ -15,6 +15,10 @@ app.get('/', (req, res, next) => {
   res.sendFile('index.html', { root: path.join(__dirname, '') })
 })
 
+app.get('/foobar', (req, res, next) => {
+  res.sendFile('foobar.html', { root: path.join(__dirname, '') })
+})
+
 app.use(serveStatic(path.join(__dirname, 'dist')))
 
 app.listen(process.env.PORT, () => {
